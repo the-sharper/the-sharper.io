@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- favicon -->
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="image/png" />
+    <!-- webpage title -->
+    <title>Mange / Tailwind CSS</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- flex container -->
+      <div class="flex items-center justify-between">
+        <!-- logo -->
+        <div class="pt-2">
+          <a href="index.html">
+            <img src="./assets/img/logo.svg" alt="logo-img" />
+          </a>
+        </div>
+
+        <!-- navbar menu -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+
+        <!-- button -->
+        <a
+          href="#"
+          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+          >Get Started</a
+        >
+
+        <!-- hamburger icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- mobile menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!-- left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            Stay in toch with new gen of AI translation
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Now there's no need to learn language to understand what was said in your favorite movie of series
+            <br>Jsut click on 1 button and get everything you want to know
+          </p>
+
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >Get Started</a
+            >
+          </div>
+        </div>
+
+        <!-- image -->
+        <div class="md:w-1/2">
+          <img
+            src="./assets/img/illustration-intro.svg"
+            alt="illustration-intro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- what's different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            What's different about NewVo?
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Get tones of information even without knowing target language. Our AI translation will do it by pressing only one button
+          </p>
+        </div>
+
+        <!-- numbered list -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- list item-1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Simplicity
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Simplicity
+              </h3>
+              <p class="text-darkGrayishBlue">
+                No hard-to-use plugin. One click and here you go to get the information from foreign languages
+              </p>
+            </div>
+          </div>
+
+          <!-- list item-2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Care
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Care
+              </h3>
+              <p class="text-darkGrayishBlue">
+                By clicking the button you do not to need the text anymore. Our AI will read the translation to make you comfortable
+              </p>
+            </div>
+          </div>
+
+          <!-- list item-3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  New generation of translation
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                New generation of translation
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Text-to-speach technology allows you to do your daily tasks listening your favorite content on background
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="aspect-video p-12 m-12">
+      <iframe
+        class="w-full h-full"
+        src="./assets/img/video.mp4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+    <!-- testimonials -->
+    <section id="testimonials">
+      <!-- container to heading and test blocks -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center">
+          What's different about Manage?
+        </h2>
+        <!-- testimonials container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- testimonial-1 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+          >
+            <img
+              src="./assets/img/avatar-anisha.png"
+              class="w-16 -mt-14"
+              alt="avatar-alisha"
+            />
+            <h5 class="text-lg font-bold">Marlanbekov Duman</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+
+          <!-- testimonial-2 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img
+              src="./assets/img/avatar-ali.png"
+              class="w-16 -mt-14"
+              alt="avatar-ali"
+            />
+            <h5 class="text-lg font-bold">Ussen Yerasyl</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
+
+          <!-- testimonial-3 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img
+              src="./assets/img/avatar-richard.png"
+              class="w-16 -mt-14"
+              alt="avatar-richard"
+            />
+            <h5 class="text-lg font-bold">Zhumabayev Alikhan</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="my-16">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- heading -->
+        <h2
+          class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Simplify how your content contribution works
+        </h2>
+
+        <!-- button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- flex container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+
+          <!-- Logo -->
+          <div>
+            <img src="./assets/img/logo-white.svg" class="h-8" alt="" />
+          </div>
+
+          <!-- social links container -->
+          <div class="flex justify-center space-x-4">
+            <!-- link-1 -->
+            <a href="#">
+              <img
+                src="./assets/img/icon-facebook.svg"
+                alt="icon-facebook"
+                class="h-8"
+              />
+            </a>
+            <!-- link-2 -->
+            <a href="#">
+              <img
+                src="./assets/img/icon-youtube.svg"
+                alt="icon-youtube"
+                class="h-8"
+              />
+            </a>
+            <!-- link-3 -->
+            <a href="#">
+              <img
+                src="./assets/img/icon-twitter.svg"
+                alt="icon-twitter"
+                class="h-8"
+              />
+            </a>
+            <!-- link-4 -->
+            <a href="#">
+              <img
+                src="./assets/img/icon-pinterest.svg"
+                alt="icon-pinterest"
+                class="h-8"
+              />
+            </a>
+            <!-- link-5 -->
+            <a href="#">
+              <img
+                src="./assets/img/icon-instagram.svg"
+                alt="icon-instagram"
+                class="h-8"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- list container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Products</a>
+            <a href="#" class="hover:text-brightRed">About</a>
+          </div>
+
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Community</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
+        </div>
+
+        <!-- input container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Stay in touch with us"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js / script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
